@@ -1,5 +1,5 @@
 const request = require('request');
-const express = require('express ')
+// const express = require('express ')
 const weather = require('./utils/weather')
 const geocode = require('./utils/geocode')
 
