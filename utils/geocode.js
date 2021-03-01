@@ -8,7 +8,7 @@ const geocode =(address,callback)=>{
             callback("Unable to connect",undefined)
         }
         else if(geodata.body.message){
-            callback(geodata.body.message + ". No input found", undefined)
+            callback("No input found", undefined)
         } 
         else if(geodata.body.features.length===0){
             callback(" Please enter correct input",undefined)
