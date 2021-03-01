@@ -7,6 +7,8 @@ const weather = require('../utils/weather')
 const geocode = require('../utils/geocode')
 const req = require('request')
 
+const port = process.env.PORT || 3000
+
 const publicPath = path.join(__dirname , '../public')
 app.use(express.static(publicPath))
 console.log(publicPath)
@@ -80,6 +82,6 @@ app.get('*',(req,res)=>{
         data : 'Choose from the available links'
     })
 })
-app.listen(3000,()=>{
-    console.log("Connected successfully")
+app.listen(port,()=>{
+    console.log("Connected successfully to "+ port)
 })
