@@ -7,7 +7,7 @@ const output = document.querySelector('#message1')
 weatherForm.addEventListener('submit',(e)=>{
     e.preventDefault();
     const location = search.value;
-    window.location.href = "http://localhost:3000/weather?address="+location;
+    window.location.href = "/weather?address="+location;
 
     //Use this when you want to use client side js
 
