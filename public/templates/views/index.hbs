@@ -2,19 +2,21 @@
 
 <html>
     <head>
+        {{!-- Partial named header.hbs is used below--}}
         {{>header}}
+        {{! Css file is loaded}}
         <link rel= "stylesheet" href = "../index.css">
-        {{!-- <h2> {{title}} </h2> </head> --}}
     <body>
-            {{!-- <h2>{{data}}</h2> --}}
             <br> <br> <br> <br>
             <form>
                 <input placeholder = "Enter Location">
                 <button> Submit </button>
             </form>
-            <p id = "message1"></p>
-            {{!-- <p id = "message1"></p> --}}
+            <p id = "message1"></p> {{! Content is provided to this paragraph from app.js(public)}}
+
+        {{!-- Partial named footer.hbs is used below--}}    
             {{>footer}}
-        <script src= "app.js"></script>
+        {{! Script is loaded... Is is always loaded at end at script requires element mentioned in the hbs file}}
+        <script src= "app.js"></script> 
     </body>
 </html>

@@ -2,11 +2,14 @@
 
 <html>
     <head>
+        {{!-- Partial named header.hbs is used below--}}
         {{>header}}
         <link rel="stylesheet" href = "../index.css">
         {{!-- <h2> {{title}} </h2> </head> --}}
     <body>
+            {{! Data is provided from app.js(src)}}
             <h3>{{data}}</h3>
+            {{!-- Partial named footer.hbs is used below--}}
             {{>footer}}
     </body>
 
